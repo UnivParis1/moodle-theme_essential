@@ -74,7 +74,7 @@ if ($enable1alert || $enable2alert || $enable3alert) {
                 <?php
                 $alert1icon = 'alert' . \theme_essential\toolbox::get_setting('alert1type');
                 echo $$alert1icon.'<span class="title">'.\theme_essential\toolbox::get_setting('alert1title', true);
-                echo '</span>'.\theme_essential\toolbox::get_setting('alert1text', 'format_html'); ?>
+                echo '</span>'.\theme_essential\toolbox::get_setting('alert1text', true); ?>
             </div>
 <?php
 }
