@@ -2049,7 +2049,7 @@ if ($ADMIN->fulltree) {
     $title = get_string('alerttext', 'theme_essential');
     $description = get_string('alerttextdesc', 'theme_essential');
     $default = '';
-    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $essentialsettingsfrontpage->add($setting);
 
@@ -2095,7 +2095,7 @@ if ($ADMIN->fulltree) {
     $title = get_string('alerttext', 'theme_essential');
     $description = get_string('alerttextdesc', 'theme_essential');
     $default = '';
-    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $essentialsettingsfrontpage->add($setting);
 
@@ -2141,7 +2141,7 @@ if ($ADMIN->fulltree) {
     $title = get_string('alerttext', 'theme_essential');
     $description = get_string('alerttextdesc', 'theme_essential');
     $default = '';
-    $setting = new admin_setting_configtextarea($name, $title, $description, $default);
+    $setting = new admin_setting_confightmleditor($name, $title, $description, $default);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $essentialsettingsfrontpage->add($setting);
 
